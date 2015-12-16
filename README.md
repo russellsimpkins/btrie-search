@@ -13,7 +13,7 @@ The name might not be the best. This program lets you search a file of strings f
 this.is.another
 ```
 
-The search file is also a list of strings to search the input file e.g.
+```<search file>``` is also a list of strings to search the input file e.g.
 
 ```
 this.is.another
