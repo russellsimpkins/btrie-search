@@ -4,7 +4,7 @@ The name might not be the best. This program lets you search a file of strings f
 
 ``` go run trie.go -i <input file> -s <search file> ```
 
-<input file> should be a list of strings to search through that are new line separated e.g.
+```<input file>``` should be a list of strings to search through that are new line separated e.g.
 
 ```
 /foo/bar/baz
