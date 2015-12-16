@@ -1,4 +1,4 @@
-=== Search Files
+### Btrie Search
 
 The name might not be the best. This program lets you search for a file of strings for a file of strings.
 
