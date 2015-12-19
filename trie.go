@@ -93,7 +93,6 @@ func (trie *Trie) Load(filename string) (err error) {
 	for scanner.Scan() {
 		trie.Add(scanner.Text())
 	}
-	fmt.Printf("%v\n", trie)
 	thefile.Close()
 	return
 }
