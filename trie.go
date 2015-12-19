@@ -132,12 +132,10 @@ func main() {
 	t := Trie{}
 	err := t.Load(*inputfile)
 	if err != nil {
-		fmt.Println("bad input file ", *inputfile, " ", err)
 		return
 	}
 	err = t.Check(*testfile)
 	if err != nil {
-		fmt.Println("bad search file ", *checkfile, " ", err)
 		return
 	}
 }
