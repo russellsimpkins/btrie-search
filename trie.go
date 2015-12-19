@@ -131,10 +131,6 @@ func main() {
 
 	t := Trie{}
 	t.Load(*inputfile)
-	//fmt.Printf("%v\n", t)
 	t.Check(*testfile)
 
-	if 1 == 1 {
-		return
-	}
 }
