@@ -80,9 +80,9 @@ func (trie *Trie) Add(item string) {
 
 	// we're at the end of the line, update match to true
 	trie.Match = true
-
 }
 
+// this function loads the trie from a file
 func (trie *Trie) Load(filename string) (err error) {
 	thefile, err := os.Open(filename)
 	if err != nil {
@@ -97,6 +97,7 @@ func (trie *Trie) Load(filename string) (err error) {
 	return
 }
 
+// this fuction reads in a file of strings to check
 func (trie *Trie) Check(filename string) (err error) {
 	thefile, err := os.Open(filename)
 	if err != nil {
@@ -129,7 +130,14 @@ func main() {
 	}
 
 	t := Trie{}
-	t.Load(*inputfile)
-	t.Check(*testfile)
-
+	err := t.Load(*inputfile)
+	if err != nil {
+		fmt.Println("bad input file ", *inputfile, " ", err)
+		return
+	}
+	err = t.Check(*testfile)
+	if err != nil {
+		fmt.Println("bad search file ", *checkfile, " ", err)
+		return
+	}
 }
